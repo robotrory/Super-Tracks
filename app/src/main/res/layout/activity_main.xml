@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view">
+<ImageView
+    android:visibility="gone"
+    android:id="@+id/bannerAd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/single_muslim"
+    android:scaleType="fitStart" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playImageView"
+        android:src="@drawable/overlay_large_play_button"
+        android:layout_centerInParent="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bank_ad"
+        android:id="@+id/bankAd"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/playImageView"
+        android:layout_alignStart="@+id/playImageView" />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tmobile_ad"
+        android:id="@+id/fullscreenAd"
+        android:scaleType="centerCrop" />
+
+</RelativeLayout>
